@@ -224,6 +224,6 @@ while game_loop == 1:
     for entry in text_to_print:
         text_ready, text_pos = text_to_print[entry]
         main_screen.blit(text_ready, text_pos)
-    pygame.draw.circle(main_screen, ball.color, (ball.x, ball.y), ball.radius)
+    pygame.draw.circle(main_screen, ball.color, (int(ball.x), int(ball.y)), ball.radius)
     pygame.display.flip()
-    CLOCK.tick(20)
+    CLOCK.tick(30)
